@@ -1,26 +1,98 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qp6-Pr-iDD">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="T_A_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDw-Re-4sr" userLabel="Transportation">
+                                <rect key="frame" x="20" y="72" width="301" height="295"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transportation.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="U28-KI-yRN">
+                                        <rect key="frame" x="8" y="8" width="285" height="279"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="U28-KI-yRN" secondAttribute="bottom" id="AAo-13-8Xa"/>
+                                    <constraint firstItem="U28-KI-yRN" firstAttribute="leading" secondItem="QDw-Re-4sr" secondAttribute="leadingMargin" id="CL2-bY-ftY"/>
+                                    <constraint firstItem="U28-KI-yRN" firstAttribute="top" secondItem="QDw-Re-4sr" secondAttribute="topMargin" id="Y6t-S5-ieb"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="U28-KI-yRN" secondAttribute="trailing" id="alz-Pp-oeT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5G-vf-rif" userLabel="Animal">
+                                <rect key="frame" x="346" y="72" width="301" height="295"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animals.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="eu9-Ia-Dfc">
+                                        <rect key="frame" x="8" y="8" width="285" height="279"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="eu9-Ia-Dfc" secondAttribute="trailing" id="31i-TJ-MuO"/>
+                                    <constraint firstItem="eu9-Ia-Dfc" firstAttribute="top" secondItem="R5G-vf-rif" secondAttribute="topMargin" id="Lof-cC-yYC"/>
+                                    <constraint firstItem="eu9-Ia-Dfc" firstAttribute="leading" secondItem="R5G-vf-rif" secondAttribute="leadingMargin" id="NW3-EG-xuk"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="eu9-Ia-Dfc" secondAttribute="bottom" id="Tpd-DP-TEp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R5G-vf-rif" firstAttribute="leading" secondItem="QDw-Re-4sr" secondAttribute="trailing" constant="25" id="N8W-O1-gue"/>
+                            <constraint firstItem="QDw-Re-4sr" firstAttribute="width" secondItem="R5G-vf-rif" secondAttribute="width" id="RHh-im-MKX"/>
+                            <constraint firstItem="QDw-Re-4sr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Wow-l6-tdO"/>
+                            <constraint firstItem="QDw-Re-4sr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Xl6-iq-dDw"/>
+                            <constraint firstItem="QDw-Re-4sr" firstAttribute="height" secondItem="R5G-vf-rif" secondAttribute="height" id="eJn-O1-2yR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R5G-vf-rif" secondAttribute="bottom" constant="8" id="lbd-mN-IOf"/>
+                            <constraint firstItem="R5G-vf-rif" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="pFU-d1-lKl"/>
+                            <constraint firstItem="R5G-vf-rif" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zXd-LE-4RA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QDw-Re-4sr" secondAttribute="bottom" constant="8" id="zeu-PG-eVQ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aqp-tJ-Ebm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="848.72563718140941" y="-548"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TUS-Un-TOB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qp6-Pr-iDD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IJc-oZ-eew">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cFg-BN-sSO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wui-mJ-D14" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="-547.37631184407803"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="animals.JPG" width="2448" height="3264"/>
+        <image name="transportation.JPG" width="2448" height="3264"/>
+    </resources>
 </document>

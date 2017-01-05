@@ -13,6 +13,8 @@
 		B63A76351E1DDAA1005C95D3 /* T_A_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B63A76331E1DDAA1005C95D3 /* T_A_App.xcdatamodeld */; };
 		B63A76371E1DDAA1005C95D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63A76361E1DDAA1005C95D3 /* Assets.xcassets */; };
 		B63A763A1E1DDAA1005C95D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63A76381E1DDAA1005C95D3 /* LaunchScreen.storyboard */; };
+		B63A76421E1DDE04005C95D3 /* transportation.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B63A76411E1DDE04005C95D3 /* transportation.JPG */; };
+		B63A76441E1DDE0B005C95D3 /* animals.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B63A76431E1DDE0B005C95D3 /* animals.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B63A76361E1DDAA1005C95D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B63A76391E1DDAA1005C95D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B63A763B1E1DDAA1005C95D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63A76411E1DDE04005C95D3 /* transportation.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transportation.JPG; sourceTree = "<group>"; };
+		B63A76431E1DDE0B005C95D3 /* animals.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = animals.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				B63A762E1E1DDAA1005C95D3 /* ViewController.swift */,
 				B63A76301E1DDAA1005C95D3 /* Main.storyboard */,
 				B63A76361E1DDAA1005C95D3 /* Assets.xcassets */,
+				B63A76411E1DDE04005C95D3 /* transportation.JPG */,
+				B63A76431E1DDE0B005C95D3 /* animals.JPG */,
 				B63A76381E1DDAA1005C95D3 /* LaunchScreen.storyboard */,
 				B63A763B1E1DDAA1005C95D3 /* Info.plist */,
 				B63A76331E1DDAA1005C95D3 /* T_A_App.xcdatamodeld */,
@@ -128,8 +134,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B63A763A1E1DDAA1005C95D3 /* LaunchScreen.storyboard in Resources */,
+				B63A76421E1DDE04005C95D3 /* transportation.JPG in Resources */,
 				B63A76371E1DDAA1005C95D3 /* Assets.xcassets in Resources */,
 				B63A76321E1DDAA1005C95D3 /* Main.storyboard in Resources */,
+				B63A76441E1DDE0B005C95D3 /* animals.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +314,7 @@
 				B63A76401E1DDAA1005C95D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
