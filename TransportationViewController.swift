@@ -12,7 +12,7 @@ import AVFoundation
 class TransportationViewController: UIViewController {
     
     var player = AVAudioPlayer()
-    let audioPath = Bundle.main.path(forResource: "trainSound", ofType: "mp3")
+//    let audioPath = Bundle.main.path(forResource: "trainSound", ofType: "mp3")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,18 +21,25 @@ class TransportationViewController: UIViewController {
 
     @IBAction func imageButtonTapped(_ sender: UIButton) {
         
+        var soundArray = ["ambulance", "bicycle", "bulldozer", "car", "racecar", "firetruck", "helicopter", "motorcycle", "plane", "policecar", "truck", "trainsSound"]
+        let randomNumber = Int(arc4random_uniform(UInt32(soundArray.count)))
+        let fileLocation = Bundle.main.path(forResource: soundArray[randomNumber], ofType: "mp3")
+        
         do {
             
-            try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+            print(soundArray[randomNumber])
+            try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileLocation!))
+            
+            player.play()
+
             
         } catch {
             
             //process error
-        }
-        
-        player.play()
-        
+            
+        }        
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
