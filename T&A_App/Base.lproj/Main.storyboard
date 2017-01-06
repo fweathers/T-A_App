@@ -103,6 +103,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cly-X5-MhG">
+                                <rect key="frame" x="20" y="91" width="627" height="284"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backgroundTapped:" destination="UEH-sP-eNc" eventType="touchUpInside" id="dSB-AC-dpr"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPZ-Xh-gpr">
                                 <rect key="frame" x="213" y="99" width="240" height="176"/>
                                 <subviews>
@@ -140,13 +147,20 @@
                         <constraints>
                             <constraint firstItem="Nbl-uN-QNg" firstAttribute="centerX" secondItem="suK-Fl-nps" secondAttribute="centerX" id="0Wz-Tz-2a6"/>
                             <constraint firstItem="QPZ-Xh-gpr" firstAttribute="centerX" secondItem="suK-Fl-nps" secondAttribute="centerX" id="1Fx-Fu-jNj"/>
+                            <constraint firstItem="y6v-t1-EIL" firstAttribute="top" secondItem="Cly-X5-MhG" secondAttribute="bottom" id="AAa-1e-3lc"/>
+                            <constraint firstItem="Cly-X5-MhG" firstAttribute="leading" secondItem="suK-Fl-nps" secondAttribute="leadingMargin" id="QIJ-9W-UBp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cly-X5-MhG" secondAttribute="trailing" id="T1Z-O2-aRa"/>
                             <constraint firstItem="Nbl-uN-QNg" firstAttribute="top" secondItem="26A-mE-hUd" secondAttribute="bottom" constant="8" id="V0u-1J-gf3"/>
                             <constraint firstItem="y6v-t1-EIL" firstAttribute="top" secondItem="QPZ-Xh-gpr" secondAttribute="bottom" constant="100" id="eGb-wd-vRY"/>
                             <constraint firstItem="QPZ-Xh-gpr" firstAttribute="leading" secondItem="suK-Fl-nps" secondAttribute="leading" constant="213" id="vVt-Tz-tYZ"/>
                             <constraint firstItem="QPZ-Xh-gpr" firstAttribute="centerY" secondItem="suK-Fl-nps" secondAttribute="centerY" id="xFy-Ab-8y6"/>
                             <constraint firstItem="QPZ-Xh-gpr" firstAttribute="top" secondItem="Nbl-uN-QNg" secondAttribute="bottom" constant="8" id="y5Z-ZM-DXo"/>
+                            <constraint firstItem="Cly-X5-MhG" firstAttribute="top" secondItem="Nbl-uN-QNg" secondAttribute="bottom" id="zQ5-X6-QhH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="Nbl-uN-QNg" id="LYD-3z-CxW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihU-MK-VJ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

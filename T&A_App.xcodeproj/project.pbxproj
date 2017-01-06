@@ -28,7 +28,7 @@
 		B63A76441E1DDE0B005C95D3 /* animals.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B63A76431E1DDE0B005C95D3 /* animals.JPG */; };
 		B63A76461E1DE3A1005C95D3 /* train.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B63A76451E1DE3A1005C95D3 /* train.JPG */; };
 		B63A764C1E1DF1FB005C95D3 /* TransportationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63A764B1E1DF1FB005C95D3 /* TransportationViewController.swift */; };
-		B63A764E1E1DF268005C95D3 /* trainSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B63A764D1E1DF268005C95D3 /* trainSound.mp3 */; };
+		B63A764E1E1DF268005C95D3 /* train.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B63A764D1E1DF268005C95D3 /* train.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +55,7 @@
 		B63A76431E1DDE0B005C95D3 /* animals.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = animals.JPG; sourceTree = "<group>"; };
 		B63A76451E1DE3A1005C95D3 /* train.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = train.JPG; sourceTree = "<group>"; };
 		B63A764B1E1DF1FB005C95D3 /* TransportationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransportationViewController.swift; path = ../TransportationViewController.swift; sourceTree = "<group>"; };
-		B63A764D1E1DF268005C95D3 /* trainSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trainSound.mp3; sourceTree = "<group>"; };
+		B63A764D1E1DF268005C95D3 /* train.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = train.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 				B63441F81E1E99CC00162870 /* plane.mp3 */,
 				B63441F91E1E99CC00162870 /* policecar.mp3 */,
 				B63441FA1E1E99CC00162870 /* truck.mp3 */,
-				B63A764D1E1DF268005C95D3 /* trainSound.mp3 */,
+				B63A764D1E1DF268005C95D3 /* train.mp3 */,
 				B63A76381E1DDAA1005C95D3 /* LaunchScreen.storyboard */,
 				B63A763B1E1DDAA1005C95D3 /* Info.plist */,
 				B63A76331E1DDAA1005C95D3 /* T_A_App.xcdatamodeld */,
@@ -187,7 +187,7 @@
 				B63441FF1E1E99CC00162870 /* firetruck.mp3 in Resources */,
 				B63441FD1E1E99CC00162870 /* bulldozer.mp3 in Resources */,
 				B63442011E1E99CC00162870 /* motorcycle.mp3 in Resources */,
-				B63A764E1E1DF268005C95D3 /* trainSound.mp3 in Resources */,
+				B63A764E1E1DF268005C95D3 /* train.mp3 in Resources */,
 				B63A76441E1DDE0B005C95D3 /* animals.JPG in Resources */,
 				B63442031E1E99CC00162870 /* policecar.mp3 in Resources */,
 				B63441FE1E1E99CC00162870 /* car.mp3 in Resources */,
