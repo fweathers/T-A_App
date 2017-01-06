@@ -4,11 +4,18 @@
 
 #### **How it works:** 
 
-	- The user will choose between Transportation or Animals on the main screen.
-	- Once the category is chosen, an image and name label will appear. 
-	- If the image is touched/tapped on, sound is played. 
-	- If the user taps outside of the image, a new image and label will appear.
+* The user will choose between Transportation or Animals on the main screen.
+* Once the category is chosen, an image and name label will appear. 
+* If the image is touched/tapped on, sound is played. 
+* If the user taps outside of the image, a new image and label will appear.
 
 #### **Motivation:**
 
 Working with adults with disabilities, I wanted to create a more age appropriate application for this community with ease of use and engagement of multiple senses.
+
+#### **Roadmap:**
+
+* Add illustrations
+* Include transition to animals 
+* Incorporate animal sounds 
+* Assign colour scheme
