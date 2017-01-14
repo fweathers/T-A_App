@@ -118,7 +118,6 @@
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdD-xq-8zC">
                                         <rect key="frame" x="8" y="8" width="224" height="160"/>
-                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="imageButtonTapped:" destination="UEH-sP-eNc" eventType="touchUpInside" id="Foa-fD-1Nq"/>
                                         </connections>

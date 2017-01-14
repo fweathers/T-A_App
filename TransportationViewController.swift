@@ -17,16 +17,21 @@ class TransportationViewController: UIViewController {
     
     var player = AVAudioPlayer()
     
-    var soundArray = ["bulldozer", "car", "helicopter", "plane", "truck", "train", "ambulance"]
+//    var soundArray = ["bulldozer", "car", "helicopter", "plane", "truck", "train", "ambulance"]
     
     
-    //    var soundArray = ["ambulance", "bicycle", "bulldozer", "car", "racecar", "firetruck", "helicopter", "motorcycle", "plane", "policecar", "truck", "train"] // full array of sounds
-    
-    //    var soundArray = ["ambulance", "bicycle", "racecar", "firetruck", "plane", "policecar"] // there's a issue with these sounds
+        var soundArray = ["ambulance", "bicycle", "bulldozer", "car", "racecar", "firetruck", "helicopter", "motorcycle", "plane", "policecar", "truck", "train"] // full array of sounds
+        
+    //    var soundArray = ["ambulance", "bicycle", "racecar", "firetruck", "policecar"] // there's a issue with these sounds
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.nameLabel.text = "train"
+        
+        setUpAudioPlayer(file: "train", type: "mp3")
+        player.play()
+
     }
     
     func setUpAudioPlayer(file: NSString, type: NSString) {
