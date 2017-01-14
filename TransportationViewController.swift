@@ -13,15 +13,16 @@ class TransportationViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var transportationImage: UIImageView!
+    
     var player = AVAudioPlayer()
     
-    
-    var soundArray = ["bulldozer", "car", "helicopter", "motorcycle", "plane", "truck", "train"]
+    var soundArray = ["bulldozer", "car", "helicopter", "plane", "truck", "train", "ambulance"]
     
     
     //    var soundArray = ["ambulance", "bicycle", "bulldozer", "car", "racecar", "firetruck", "helicopter", "motorcycle", "plane", "policecar", "truck", "train"] // full array of sounds
     
-    //    var soundArray = ["ambulance", "bicycle", "racecar", "firetruck", "plane", "policecar", "trainsSound"] // there's a issue with these sounds
+    //    var soundArray = ["ambulance", "bicycle", "racecar", "firetruck", "plane", "policecar"] // there's a issue with these sounds
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,13 +53,14 @@ class TransportationViewController: UIViewController {
         
         setUpAudioPlayer(file: soundArray[number] as NSString, type: "mp3")
         self.nameLabel.text = soundArray[number]
+        self.transportationImage.image = UIImage(named: soundArray[number])
         
         player.play()
         
     }
     
     @IBAction func imageButtonTapped(_ sender: UIButton) {
-        
+
         player.play()
         
     }

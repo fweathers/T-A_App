@@ -160,6 +160,7 @@
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="Nbl-uN-QNg" id="LYD-3z-CxW"/>
+                        <outlet property="transportationImage" destination="ffx-cP-qDk" id="zP4-Wf-wpf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihU-MK-VJ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
