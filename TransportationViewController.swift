@@ -17,11 +17,11 @@ class TransportationViewController: UIViewController {
     
     var player = AVAudioPlayer()
     
-//    var soundArray = ["bulldozer", "car", "helicopter", "plane", "truck", "train", "ambulance"]
+    //    var soundArray = ["bulldozer", "car", "helicopter", "plane", "truck", "train", "motorcycle"]
     
     
-        var soundArray = ["ambulance", "bicycle", "bulldozer", "car", "racecar", "firetruck", "helicopter", "motorcycle", "plane", "policecar", "truck", "train"] // full array of sounds
-        
+    var soundArray = ["ambulance", "bicycle", "bulldozer", "car", "racecar", "firetruck", "helicopter", "motorcycle", "plane", "policecar", "truck", "train"] // full array of sounds
+    
     //    var soundArray = ["ambulance", "bicycle", "racecar", "firetruck", "policecar"] // there's a issue with these sounds
     
     override func viewDidLoad() {
@@ -31,7 +31,7 @@ class TransportationViewController: UIViewController {
         
         setUpAudioPlayer(file: "train", type: "mp3")
         player.play()
-
+        
     }
     
     func setUpAudioPlayer(file: NSString, type: NSString) {
@@ -50,7 +50,6 @@ class TransportationViewController: UIViewController {
         }
     }
     
-    
     @IBAction func backgroundTapped(_ sender: UIButton) {
         
         let range: UInt32 = UInt32(soundArray.count)
@@ -65,7 +64,7 @@ class TransportationViewController: UIViewController {
     }
     
     @IBAction func imageButtonTapped(_ sender: UIButton) {
-
+        
         player.play()
         
     }
@@ -74,16 +73,5 @@ class TransportationViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
