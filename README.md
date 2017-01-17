@@ -16,6 +16,6 @@ Working with adults with disabilities, I wanted to create a more age appropriate
 #### **Roadmap:**
 
 * Add illustrations
-* Include transition to animals 
-* Incorporate animal sounds 
+* Work on UI/UX
 * Assign colour scheme
+
