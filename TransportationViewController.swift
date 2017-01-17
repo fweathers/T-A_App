@@ -17,19 +17,14 @@ class TransportationViewController: UIViewController {
     
     var player = AVAudioPlayer()
     
-    //    var soundArray = ["bulldozer", "car", "helicopter", "plane", "truck", "train", "motorcycle"]
-    
-    
     var soundArray = ["ambulance", "bicycle", "bulldozer", "car", "racecar", "firetruck", "helicopter", "motorcycle", "plane", "policecar", "truck", "train"] // full array of sounds
-    
-    //    var soundArray = ["ambulance", "bicycle", "racecar", "firetruck", "policecar"] // there's a issue with these sounds
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.nameLabel.text = "train"
         
-        setUpAudioPlayer(file: "train", type: "mp3")
+        setUpAudioPlayer(file: "train", type: "wav")
         player.play()
         
     }
@@ -55,7 +50,7 @@ class TransportationViewController: UIViewController {
         let range: UInt32 = UInt32(soundArray.count)
         let number = Int(arc4random_uniform(range))
         
-        setUpAudioPlayer(file: soundArray[number] as NSString, type: "mp3")
+        setUpAudioPlayer(file: soundArray[number] as NSString, type: "wav")
         self.nameLabel.text = soundArray[number]
         self.transportationImage.image = UIImage(named: soundArray[number])
         

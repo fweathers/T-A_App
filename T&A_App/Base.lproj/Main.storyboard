@@ -221,11 +221,11 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woy-qy-sFL">
-                                <rect key="frame" x="312" y="72" width="42" height="35"/>
+                                <rect key="frame" x="303.5" y="72" width="61" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Tsx-wb-fP3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
