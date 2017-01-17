@@ -187,6 +187,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCt-xo-wYE">
                                         <rect key="frame" x="0.0" y="0.0" width="627" height="268"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="backgroundButton:" destination="BGN-dZ-RGn" eventType="touchUpInside" id="KJd-81-3eA"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="qA8-eA-feJ">
                                         <rect key="frame" x="187" y="35" width="253" height="198"/>
@@ -197,6 +200,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huc-hV-3hz">
                                         <rect key="frame" x="187" y="35" width="253" height="198"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="imageButton:" destination="BGN-dZ-RGn" eventType="touchUpInside" id="5nb-wR-4nF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
